@@ -1,0 +1,740 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-03-17T13:25:27.556065-05:00",
+    "phase2_ready": true,
+    "issue_count": 28,
+    "compute_time_ms": 0
+  },
+  "quick_ref": {
+    "open_count": 19,
+    "actionable_count": 5,
+    "blocked_count": 14,
+    "in_progress_count": 0,
+    "top_picks": [
+      {
+        "id": "p4-mpd",
+        "title": "M1.0: Scaffold and Data Model Foundation",
+        "score": 0.3901805274123338,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): p4-rdd",
+          "📊 High centrality in dependency graph (PageRank: 97%)",
+          "⚡ Low effort, high impact - good starting point",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 1
+      },
+      {
+        "id": "p4-wisp-wlup",
+        "title": "mol-polecat-work",
+        "score": 0.16722640985243217,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): p4-z4o",
+          "✅ Currently unclaimed - available for work"
+        ],
+        "unblocks": 1
+      },
+      {
+        "id": "p4-ddp",
+        "title": "Set up GitHub Pages with bv beads viewer",
+        "score": 0.11383699593137796,
+        "reasons": [
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "id": "p4-rdd",
+      "title": "M1.1: Points Engine (Core Business Logic)",
+      "type": "epic",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.6712706603331988,
+      "breakdown": {
+        "pagerank": 0.22,
+        "betweenness": 0.2,
+        "blocker_ratio": 0.13,
+        "staleness": 0.001251688967303241,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.06825,
+        "urgency": 0.00508663644919522,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 1,
+        "betweenness_norm": 1,
+        "blocker_ratio_norm": 1,
+        "staleness_norm": 0.025033779346064815,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.6825,
+        "urgency_norm": 0.0508663644919522,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 6), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-mpd first to unblock this",
+      "reasons": [
+        "🎯 Completing this unblocks 3 downstream issues (p4-8ro, p4-cw3, p4-hls)",
+        "🔀 Critical path bottleneck (betweenness: 100%)",
+        "📊 High centrality in dependency graph (PageRank: 100%)",
+        "⚡ Low effort, high impact - good starting point",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p4-mpd - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-8ro",
+        "p4-cw3",
+        "p4-hls"
+      ],
+      "blocked_by": [
+        "p4-mpd"
+      ]
+    },
+    {
+      "id": "p4-cw3",
+      "title": "M1.2: Tier Progression + Lazy Month Reset",
+      "type": "epic",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.5078751163222138,
+      "breakdown": {
+        "pagerank": 0.123580554512188,
+        "betweenness": 0.16000000000000003,
+        "blocker_ratio": 0.10400000000000001,
+        "staleness": 0.0012512645845871914,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.06125,
+        "urgency": 0.005085002666176664,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.5617297932372182,
+        "betweenness_norm": 0.8,
+        "blocker_ratio_norm": 0.8,
+        "staleness_norm": 0.025025291691743827,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.6124999999999999,
+        "urgency_norm": 0.050850026661766634,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 5), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-rdd first to unblock this",
+      "reasons": [
+        "🎯 Completing this unblocks 3 downstream issues (p4-dhv, p4-dkt, p4-rer)",
+        "🔀 Critical path bottleneck (betweenness: 80%)",
+        "📊 High centrality in dependency graph (PageRank: 56%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p4-rdd - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-dhv",
+        "p4-dkt",
+        "p4-rer"
+      ],
+      "blocked_by": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-mpd",
+      "title": "M1.0: Scaffold and Data Model Foundation",
+      "type": "epic",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.3901805274123338,
+      "breakdown": {
+        "pagerank": 0.21315347153918832,
+        "betweenness": 0,
+        "blocker_ratio": 0.052000000000000005,
+        "staleness": 0.001251688967303241,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.07525,
+        "urgency": 0.00508663644919522,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.9688794160872196,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.4,
+        "staleness_norm": 0.025033779346064815,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.7525,
+        "urgency_norm": 0.0508663644919522,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 7), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Quick win - start here for fast progress",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p4-rdd",
+        "📊 High centrality in dependency graph (PageRank: 97%)",
+        "⚡ Low effort, high impact - good starting point",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-dkt",
+      "title": "M1.4: Notifications API",
+      "type": "epic",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.29442908774161586,
+      "breakdown": {
+        "pagerank": 0.06217088215289032,
+        "betweenness": 0.1,
+        "blocker_ratio": 0.078,
+        "staleness": 0.0012509945228587965,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.05425,
+        "urgency": 0.005083962955130661,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.2825949188767742,
+        "betweenness_norm": 0.5,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.02501989045717593,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.5425,
+        "urgency_norm": 0.05083962955130661,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 4), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-cw3 first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p4-0kj",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p4-cw3 - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-0kj"
+      ],
+      "blocked_by": [
+        "p4-cw3"
+      ]
+    },
+    {
+      "id": "p4-8ro",
+      "title": "M1.3: Leaderboard",
+      "type": "epic",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.26831786205274066,
+      "breakdown": {
+        "pagerank": 0.06217088215289032,
+        "betweenness": 0.04000000000000001,
+        "blocker_ratio": 0.078,
+        "staleness": 0.0012512645845871914,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.05425,
+        "urgency": 0.005085002666176664,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.2825949188767742,
+        "betweenness_norm": 0.2,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.025025291691743827,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.5425,
+        "urgency_norm": 0.050850026661766634,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 4), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-rdd first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p4-rng",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p4-rdd - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-rng"
+      ],
+      "blocked_by": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-2ts",
+      "title": "M1.6: Player Dashboard (Web) — Core",
+      "type": "epic",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.26441953900878834,
+      "breakdown": {
+        "pagerank": 0.04844483619858363,
+        "betweenness": 0.1,
+        "blocker_ratio": 0.052000000000000005,
+        "staleness": 0.0012506473006365744,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725,
+        "urgency": 0.005082626148420994,
+        "risk": 0.005856946079199351,
+        "pagerank_norm": 0.22020380090265285,
+        "betweenness_norm": 0.5,
+        "blocker_ratio_norm": 0.4,
+        "staleness_norm": 0.025012946012731484,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.4725,
+        "urgency_norm": 0.050826261484209934,
+        "risk_norm": 0.05856946079199351,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0.128564869306645,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.05856946079199351,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-8ro first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p4-zmm",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by 3 items - need to clear dependencies",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "p4-zmm"
+      ],
+      "blocked_by": [
+        "p4-8ro",
+        "p4-dkt",
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-j1l",
+      "title": "M1: Minimum / Pass",
+      "type": "epic",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.17781368481025836,
+      "breakdown": {
+        "pagerank": 0.02622405757528404,
+        "betweenness": 0.09666666666666666,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.001252132640142747,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.005088344431536069,
+        "risk": 0.00853834841531101,
+        "pagerank_norm": 0.11920026170583656,
+        "betweenness_norm": 0.4833333333333333,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.025042652802854937,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.05088344431536068,
+        "risk_norm": 0.0853834841531101,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0.21794494717703367,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.0853834841531101,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-2ts first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by 7 items - need to clear dependencies"
+      ],
+      "blocked_by": [
+        "p4-2ts",
+        "p4-8ro",
+        "p4-cw3",
+        "p4-dkt",
+        "p4-hls",
+        "p4-mpd",
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-wisp-wlup",
+      "title": "mol-polecat-work",
+      "type": "epic",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.16722640985243217,
+      "breakdown": {
+        "pagerank": 0.042494502734114786,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.00013272677594521607,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0005656056104484498,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19315683060961267,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.0026545355189043214,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.005656056104484497,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): p4-z4o",
+        "✅ Currently unclaimed - available for work"
+      ],
+      "unblocks_ids": [
+        "p4-z4o"
+      ]
+    },
+    {
+      "id": "p4-hls",
+      "title": "M1.5: Admin Endpoints",
+      "type": "epic",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.13705446335879293,
+      "breakdown": {
+        "pagerank": 0.026154327000401118,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0012509945228587965,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725,
+        "urgency": 0.005083962955130661,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1188833045472778,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.02501989045717593,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.4725,
+        "urgency_norm": 0.05083962955130661,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on p4-rdd first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by p4-rdd - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-ddp",
+      "title": "Set up GitHub Pages with bv beads viewer",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.11383699593137796,
+      "breakdown": {
+        "pagerank": 0.022969968543517898,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00013417353520447532,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.033249999999999995,
+        "urgency": 0.0005717354876046522,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.10440894792508135,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.002683470704089506,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.33249999999999996,
+        "urgency_norm": 0.005717354876046521,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ]
+    }
+  ],
+  "quick_wins": [
+    {
+      "id": "p4-cw3",
+      "title": "M1.2: Tier Progression + Lazy Month Reset",
+      "score": 0.9,
+      "reason": "Unblocks 3 items, high priority",
+      "unblocks_ids": [
+        "p4-dhv",
+        "p4-dkt",
+        "p4-rer"
+      ]
+    },
+    {
+      "id": "p4-rdd",
+      "title": "M1.1: Points Engine (Core Business Logic)",
+      "score": 0.9,
+      "reason": "Unblocks 3 items, high priority",
+      "unblocks_ids": [
+        "p4-8ro",
+        "p4-cw3",
+        "p4-hls"
+      ]
+    },
+    {
+      "id": "p4-wisp-wlup",
+      "title": "mol-polecat-work",
+      "score": 0.6000000000000001,
+      "reason": "Unblocks 1 items",
+      "unblocks_ids": [
+        "p4-z4o"
+      ]
+    },
+    {
+      "id": "p4-2ts",
+      "title": "M1.6: Player Dashboard (Web) — Core",
+      "score": 0.5,
+      "reason": "Unblocks 1 items, high priority",
+      "unblocks_ids": [
+        "p4-zmm"
+      ]
+    },
+    {
+      "id": "p4-8ro",
+      "title": "M1.3: Leaderboard",
+      "score": 0.5,
+      "reason": "Unblocks 1 items, high priority",
+      "unblocks_ids": [
+        "p4-rng"
+      ]
+    }
+  ],
+  "blockers_to_clear": [
+    {
+      "id": "p4-cw3",
+      "title": "M1.2: Tier Progression + Lazy Month Reset",
+      "unblocks_count": 3,
+      "unblocks_ids": [
+        "p4-dhv",
+        "p4-dkt",
+        "p4-rer"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-rdd",
+      "title": "M1.1: Points Engine (Core Business Logic)",
+      "unblocks_count": 3,
+      "unblocks_ids": [
+        "p4-8ro",
+        "p4-cw3",
+        "p4-hls"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p4-mpd"
+      ]
+    },
+    {
+      "id": "p4-2ts",
+      "title": "M1.6: Player Dashboard (Web) — Core",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p4-zmm"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p4-8ro",
+        "p4-dkt",
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-8ro",
+      "title": "M1.3: Leaderboard",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p4-rng"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p4-rdd"
+      ]
+    },
+    {
+      "id": "p4-dkt",
+      "title": "M1.4: Notifications API",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "p4-0kj"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "p4-cw3"
+      ]
+    }
+  ],
+  "project_health": {
+    "counts": {
+      "total": 28,
+      "open": 19,
+      "closed": 9,
+      "blocked": 14,
+      "actionable": 5,
+      "by_status": {
+        "closed": 9,
+        "hooked": 2,
+        "open": 17
+      },
+      "by_type": {
+        "epic": 25,
+        "task": 3
+      },
+      "by_priority": {
+        "0": 2,
+        "1": 7,
+        "2": 19
+      }
+    },
+    "graph": {
+      "node_count": 28,
+      "edge_count": 27,
+      "density": 0.03571428571428571,
+      "has_cycles": false,
+      "phase2_ready": true
+    },
+    "velocity": {
+      "closed_last_7_days": 9,
+      "closed_last_30_days": 9,
+      "avg_days_to_close": 0.0007124485596707818,
+      "weekly": [
+        {
+          "week_start": "2026-03-16T00:00:00Z",
+          "closed": 9
+        },
+        {
+          "week_start": "2026-03-09T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-03-02T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-23T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-16T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-09T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-02-02T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2026-01-26T00:00:00Z",
+          "closed": 0
+        }
+      ]
+    }
+  },
+  "commands": {
+    "claim_top": "CI=1 br update p4-rdd --status in_progress --json",
+    "show_top": "CI=1 br show p4-rdd --json",
+    "list_ready": "CI=1 br ready --json",
+    "list_blocked": "CI=1 br blocked --json",
+    "refresh_triage": "bv --robot-triage"
+  }
+}
