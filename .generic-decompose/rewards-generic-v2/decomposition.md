@@ -100,7 +100,7 @@ Before feature work, ensure:
   - `tier: Number` — Tier at end of month
   - `monthlyPoints: Number` — Points earned that month
   - `createdAt: String` — ISO timestamp
-- Used by epics: M2.1, M2.5
+- Used by epics: M1.2 (lazy reset writes), M2.1 (bulk reset writes), M2.5 (reads for timeline)
 
 ## Core Interface Inventory
 
@@ -433,7 +433,7 @@ Before feature work, ensure:
 
 ### Epic M2.5: Dashboard Tier Timeline + API Docs
 **Tracer bullet:** Player with 6 months of tier history → dashboard shows visual tier timeline → API docs cover all endpoints
-**Depends on:** M2.1 (tier-history data must exist)
+**Depends on:** M1.2 (tier-history data created by lazy reset)
 **Parallelizable with:** M2.2, M2.3, M2.4
 **Data structures:** DS5
 **Interfaces:** None new
